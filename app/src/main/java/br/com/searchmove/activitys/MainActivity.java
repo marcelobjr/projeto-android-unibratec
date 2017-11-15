@@ -1,7 +1,9 @@
-package br.com.searchmove;
+package br.com.searchmove.activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import br.com.searchmove.R;
 
 public class MainActivity extends AppCompatActivity {
 
