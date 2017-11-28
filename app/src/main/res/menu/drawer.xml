@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!-- Lista com todos os carros -->
+        <item
+            android:id="@+id/nav_item_carros_todos"
+            android:checked="true"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/app_name" />
+        <!-- Lista com os carros clássicos -->
+        <item
+            android:id="@+id/nav_item_carros_classicos"
+            android:checked="true"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/hint_search" />
+        <!-- Lista com os carros esportivos -->
+    </group>
+
+    <group android:checkableBehavior="single">
+        <!-- Lista com todos os carros -->
+        <item
+            android:id="@+id/nav_item_carros_todos2"
+            android:checked="true"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/app_name" />
+        <!-- Lista com os carros clássicos -->
+        <item
+            android:id="@+id/nav_item_carros_classicos2"
+            android:checked="true"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/hint_search" />
+        <!-- Lista com os carros esportivos -->
+    </group>
+</menu>
