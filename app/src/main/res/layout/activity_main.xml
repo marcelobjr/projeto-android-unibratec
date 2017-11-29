@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawerlayout">
+    android:id="@+id/drawerlayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
     <RelativeLayout
         android:id="@+id/activity_main"
@@ -52,10 +54,20 @@
         <!--android:dividerHeight="0dp"-->
         <!--android:background="#111"/>-->
 
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/navigation"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--app:menu="@menu/drawer" />-->
+
+
     <android.support.design.widget.NavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/drawer" />
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/menu_drawer" />
 </android.support.v4.widget.DrawerLayout>

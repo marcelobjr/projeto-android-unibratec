@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_solucoes"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Soluções" />
+        <item
+            android:id="@+id/nav_servicos"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Serviços" />
+        <item
+            android:id="@+id/nav_empresa"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Empresa" />
+        <item
+            android:id="@+id/nav_carreira"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Carreira" />
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Blog" />
+        <item
+            android:id="@+id/nav_webinars"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Webinars" />
+        <item
+            android:id="@+id/nav_contato"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Contato" />
+    </group>
+</menu>
