@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources><string name="app_name">Search Movie</string>
+
+    <string name="title_activity_detail">Movie Details</string>
+    <string name="hint_search">search</string>
+    <string name="action_settings">config</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="activity_list">LIST</string>
+    <string name="activity_favorite">FAVORITE</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_move">Moves</string>
+    <string name="menu_config">Config</string>
+
+</resources>

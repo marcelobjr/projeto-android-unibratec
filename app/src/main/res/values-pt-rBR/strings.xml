@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SearchMovie</string>
+    <string name="app_name">Search Movie</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="title_activity_detail">Detalhes da Activity</string>
+    <string name="title_activity_detail">Detalhes do Filme</string>
     <string name="hint_search">Pesquisar</string>
     <string name="action_settings">Configurações</string>
     <string name="title_activity_maps">Mapa</string>
+    <string name="activity_list">LISTAR</string>
+    <string name="activity_favorite">FAVORITOS</string>
+    <string name="menu_favorite">Favoritos</string>
+    <string name="menu_move">Filmes</string>
+    <string name="menu_config">Configurações</string>
+
 </resources>

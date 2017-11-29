@@ -21,14 +21,6 @@ import br.com.searchmove.dataBase.DatabaseEvent;
 import br.com.searchmove.dataBase.DbDao;
 import br.com.searchmove.model.Result;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link DetailMovieFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link DetailMovieFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class DetailMovieFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -111,6 +103,8 @@ public class DetailMovieFragment extends Fragment {
         dbDao = DbDao.getInstance(getActivity().getApplication().getApplicationContext());
         result = dbDao.getResult(result);
         isFavorite = result == null ? false : true;
+        //Call of the state button favorite.
+        changeFloatingButton();
 
         return view;
     }
