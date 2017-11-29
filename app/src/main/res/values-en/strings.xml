@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources><string name="app_name">Search Movie</string>
 
-    <string name="title_activity_detail">Detalhes da Activity</string>
+    <string name="title_activity_detail">Movie Details</string>
     <string name="hint_search">search</string>
     <string name="action_settings">config</string>
     <string name="title_activity_maps">Map</string>
