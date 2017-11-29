@@ -1,5 +1,6 @@
 package br.com.searchmove.activitys;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements OnDbClick {
 
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerlayout, toolbar, R.string.app_name,R.string.app_name);
         drawerlayout.addDrawerListener(actionBarDrawerToggle);
+
+//        ProgressDialog dialog = ProgressDialog.show(this, "",
+//                "Loading. Please wait...", true);
 
         buildViewPager();
 
@@ -106,10 +110,10 @@ public class MainActivity extends AppCompatActivity implements OnDbClick {
         public CharSequence getPageTitle(int position){
             switch (position){
                 case 0:
-                    return "lista";
+                    return getResources().getString(R.string.activity_list);
                 case 1:
                 default:
-                    return "Favoritos";
+                    return getResources().getString(R.string.activity_favorite);
             }
         }
     }
