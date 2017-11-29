@@ -103,6 +103,7 @@ public class DetailMovieFragment extends Fragment {
         dbDao = DbDao.getInstance(getActivity().getApplication().getApplicationContext());
         result = dbDao.getResult(result);
         isFavorite = result == null ? false : true;
+        //Call of the state button favorite.
         changeFloatingButton();
 
         return view;
