@@ -38,17 +38,23 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_main);
 
-        Handler handle = new Handler();
-        handle.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-//                finish();
-                mostrarLogin();
+        drawerlayout = findViewById(R.id.drawerlayout);
 
-            }
-        }, 2000);
+        toolbar = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerlayout, toolbar, R.string.app_name,R.string.app_name);
+        drawerlayout.addDrawerListener(actionBarDrawerToggle);
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+
+        buildViewPager();
 
 
 
@@ -92,29 +98,11 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
         return true;
     }
 
-    private void mostrarLogin() {
+    private void mostrarDialog() {
 //        ProgressDialog dialog = ProgressDialog.show(this, "",
 //                "Loading. Please wait...", true);
-        Intent intent = new Intent(MainActivity.this,
-                MainActivity.class);
-        startActivity(intent);
+//
 
-        setContentView(R.layout.activity_main);
-        drawerlayout = findViewById(R.id.drawerlayout);
-
-        toolbar = findViewById(R.id.toolbar);
-
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
-
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerlayout, toolbar, R.string.app_name,R.string.app_name);
-        drawerlayout.addDrawerListener(actionBarDrawerToggle);
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
-
-        buildViewPager();
 
 //        dialog.dismiss();
 
