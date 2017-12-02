@@ -78,17 +78,17 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
 
         if (id == R.id.nav_solucoes) {
             // Handle the camera action
-        } else if (id == R.id.nav_servicos) {
+        } else if (id == R.id.nav_categoria) {
 
-        } else if (id == R.id.nav_empresa) {
+        } else if (id == R.id.nav_search) {
 
-        } else if (id == R.id.nav_carreira) {
+        } else if (id == R.id.nav_favoritos) {
 
-        } else if (id == R.id.nav_blog) {
+        } else if (id == R.id.nav_assistidos) {
 
-        } else if (id == R.id.nav_webinars) {
+        } else if (id == R.id.nav_info) {
 
-        } else if (id == R.id.nav_contato) {
+        } else if (id == R.id.nav_exit) {
 
         }
 

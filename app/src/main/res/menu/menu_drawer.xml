@@ -3,31 +3,31 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_solucoes"
+            android:id="@+id/nav_categoria"
             android:icon="@drawable/ic_view_module_white_36dp"
             android:title="Categorias" />
         <item
-            android:id="@+id/nav_servicos"
+            android:id="@+id/nav_search"
             android:icon="@drawable/ic_search_white_36dp"
             android:title="Pesquisa Filmes" />
         <item
-            android:id="@+id/nav_empresa"
+            android:id="@+id/nav_favoritos"
             android:icon="@drawable/ic_favorite_white_36dp"
             android:title="Favoritos" />
         <item
-            android:id="@+id/nav_carreira"
+            android:id="@+id/nav_assistidos"
             android:icon="@drawable/ic_visibility_white_36dp"
             android:title="Assistidos" />
         <item
-            android:id="@+id/nav_blog"
+            android:id="@+id/nav_config"
             android:icon="@drawable/ic_build_white_36dp"
             android:title="Configurações" />
         <item
-            android:id="@+id/nav_webinars"
+            android:id="@+id/nav_info"
             android:icon="@drawable/ic_account_box_white_36dp"
             android:title="Informações" />
         <item
-            android:id="@+id/nav_contato"
+            android:id="@+id/nav_exit"
             android:icon="@drawable/ic_exit_to_app_white_36dp"
             android:title="Sair" />
     </group>
