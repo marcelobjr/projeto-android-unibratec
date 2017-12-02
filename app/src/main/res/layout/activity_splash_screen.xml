@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:theme="@style/TelaCheia"
+    android:theme="@style/fullScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/ic_search_white_24dp" />
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_local_movies_white_48dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -19,6 +19,20 @@
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="#fff"
-        android:textSize="30dp" />
+        android:textSize="28dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Seu App de Filmes Favorito."
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/ic_local_movies_bg" />
 </LinearLayout>

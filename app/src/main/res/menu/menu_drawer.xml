@@ -4,31 +4,31 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_solucoes"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Soluções" />
+            android:icon="@drawable/ic_view_module_white_36dp"
+            android:title="Categorias" />
         <item
             android:id="@+id/nav_servicos"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Serviços" />
+            android:icon="@drawable/ic_search_white_36dp"
+            android:title="Pesquisa Filmes" />
         <item
             android:id="@+id/nav_empresa"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Empresa" />
+            android:icon="@drawable/ic_favorite_white_36dp"
+            android:title="Favoritos" />
         <item
             android:id="@+id/nav_carreira"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Carreira" />
+            android:icon="@drawable/ic_visibility_white_36dp"
+            android:title="Assistidos" />
         <item
             android:id="@+id/nav_blog"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Blog" />
+            android:icon="@drawable/ic_build_white_36dp"
+            android:title="Configurações" />
         <item
             android:id="@+id/nav_webinars"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Webinars" />
+            android:icon="@drawable/ic_account_box_white_36dp"
+            android:title="Informações" />
         <item
             android:id="@+id/nav_contato"
-            android:icon="@drawable/ic_search_white_24dp"
-            android:title="Contato" />
+            android:icon="@drawable/ic_exit_to_app_white_36dp"
+            android:title="Sair" />
     </group>
 </menu>
