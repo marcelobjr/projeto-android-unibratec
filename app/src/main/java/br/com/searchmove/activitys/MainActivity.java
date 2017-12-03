@@ -1,5 +1,6 @@
 package br.com.searchmove.activitys;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -12,6 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -76,9 +78,7 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_solucoes) {
-            // Handle the camera action
-        } else if (id == R.id.nav_categoria) {
+        if (id == R.id.nav_categoria) {
 
         } else if (id == R.id.nav_search) {
 
@@ -89,6 +89,19 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
         } else if (id == R.id.nav_info) {
 
         } else if (id == R.id.nav_exit) {
+            new AlertDialog.Builder(this)
+                    .setTitle(getResources().getString(R.string.app_name))
+                    .setMessage(getResources().getString(R.string.exit_app))
+                    .setPositiveButton(getResources().getString(R.string.yes),
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    finish();
+                                    System.exit(1);
+                                }
+                            })
+                    .setNegativeButton(getResources().getString(R.string.no), null)
+                    .show();
 
         }
 
