@@ -2,7 +2,6 @@ package br.com.searchmove.activitys;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -22,6 +21,7 @@ import android.view.MenuItem;
 import br.com.searchmove.R;
 import br.com.searchmove.fragments.DetailMovieFragment;
 import br.com.searchmove.fragments.FavoritesMovieFragment;
+import br.com.searchmove.fragments.WatchedMovieFragment;
 import br.com.searchmove.fragments.ListMovieFragment;
 import br.com.searchmove.interfaces.OnDbClick;
 import br.com.searchmove.model.Result;
@@ -29,6 +29,7 @@ import br.com.searchmove.model.Result;
 public class MainActivity extends AppCompatActivity implements OnDbClick, NavigationView.OnNavigationItemSelectedListener {
 
     private Toolbar toolbar;
+    WatchedMovieFragment watchedMovieFragment;
     ListMovieFragment listMovieFragment;
     FavoritesMovieFragment favoritesTmDbFragment;
     ViewPager mViewPager;
@@ -79,6 +80,9 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
         int id = item.getItemId();
 
         if (id == R.id.nav_categoria) {
+            Intent intent = new Intent(this,
+                    GenerActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_search) {
 
@@ -122,7 +126,6 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
 
     }
 
-
     private void buildViewPager(){
         mViewPager = (ViewPager)findViewById(R.id.container);
         selectorPageAdapter = new SelectorPageAdapter(getSupportFragmentManager());
@@ -163,26 +166,34 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
                         listMovieFragment = new ListMovieFragment();
                     }
                     return listMovieFragment;
+
                 case 1:
-                default:
                     if (favoritesTmDbFragment == null) {
                         favoritesTmDbFragment = new FavoritesMovieFragment();
                     }
                     return favoritesTmDbFragment;
+                case 2:
+                default:
+                    if (watchedMovieFragment == null) {
+                        watchedMovieFragment = new WatchedMovieFragment();
+                    }
+                    return watchedMovieFragment;
             }
         }
 
         @Override
-        public int getCount(){return 2;}
+        public int getCount(){return 3;}
 
         @Override
         public CharSequence getPageTitle(int position){
             switch (position){
                 case 0:
-                    return "Lista";//getResources().getString(R.string.activity_list);
+                    return "Pesquisar";//getResources().getString(R.string.activity_list);
                 case 1:
+                    return "Favotito";
+                case 2:
                 default:
-                    return "favorito";//getResources().getString(R.string.activity_favorite);
+                    return "Eu Assisti";//getResources().getString(R.string.activity_favorite);
             }
         }
     }
