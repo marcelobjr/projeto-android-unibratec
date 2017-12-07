@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.searchmove.activitys.Act_ingrante2"
+    android:background="@drawable/ic_local_movies_bg">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            tools:context="br.com.searchmove.activitys.Act_ingrante2">
+
+
+            <ImageView
+                android:id="@+id/imgLog0"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/marcelobarros" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.44"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtModelo0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:text="   Marcelo Barros"
+                    android:textColor="@color/colorAccentBlack"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/txtIdade0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:layout_weight="0.9"
+                    android:text="Idade: 30"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:text="Cargo: Arquiteto de Software"
+                    android:id="@+id/txtCargo0"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:text="Empresa: MV Sistemas"
+                    android:id="@+id/txtempresa0"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            tools:context="br.com.searchmove.activitys.Act_ingrante2">
+
+
+            <ImageView
+                android:id="@+id/imgLog1"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/andrerotilio" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.44"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtModelo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:text="   André Rotílio"
+                    android:textColor="@color/colorAccentBlack"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/txtIdade1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:layout_weight="0.9"
+                    android:text="Idade: 24"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:text="Cargo: Desenvolvedor de Software"
+                    android:id="@+id/txtCargo1"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:text="Empresa: MV Sistemas"
+                    android:id="@+id/txtempresa1"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            tools:context="br.com.searchmove.activitys.Act_ingrante2">
+
+
+            <ImageView
+                android:id="@+id/imgLog2"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/juanvieitez" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.44"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtModelo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:text="   Juan Vazquez"
+                    android:textColor="@color/colorAccentBlack"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/txtIdade2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:layout_weight="0.9"
+                    android:text="Idade: 29"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:text="Cargo: Analista de Sistemas"
+                    android:id="@+id/txtCargo2"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentBlack"
+                    android:text="Empresa: Accenture"
+                    android:id="@+id/txtempresa2"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnVoltar"
+        android:layout_width="200dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="90dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+
+</LinearLayout>
+
