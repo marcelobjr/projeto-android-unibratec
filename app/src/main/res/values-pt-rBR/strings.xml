@@ -11,9 +11,14 @@
     <string name="activity_list">LISTAR</string>
     <string name="activity_favorite">FAVORITOS</string>
 
-    <string name="menu_favorite">Favoritos</string>
-    <string name="menu_move">Filmes</string>
-    <string name="menu_config">Configurações</string>
+    <!-- Menu -->
+    <string name="menu_nav_favoritos">Favorito</string>
+    <string name="menu_nav_assistidos">Eu Assisti</string>
+    <string name="menu_nav_categoria">Top 10</string>
+    <string name="menu_nav_search">Pesquisa</string>
+    <string name="menu_nav_localcine">Localização Cinemas</string>
+    <string name="menu_nav_info">Infoemações</string>
+    <string name="menu_nav_exit">Sair</string>
 
     <string name="yes">Sim</string>
     <string name="no">Não</string>

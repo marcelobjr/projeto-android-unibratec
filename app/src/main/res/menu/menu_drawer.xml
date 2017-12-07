@@ -5,30 +5,30 @@
         <item
             android:id="@+id/nav_categoria"
             android:icon="@drawable/ic_view_module_white_36dp"
-            android:title="Categorias" />
+            android:title="@string/menu_nav_categoria" />
         <item
             android:id="@+id/nav_search"
             android:icon="@drawable/ic_search_white_36dp"
-            android:title="Pesquisa Filmes" />
+            android:title="@string/menu_nav_search" />
         <item
             android:id="@+id/nav_favoritos"
             android:icon="@drawable/ic_favorite_white_36dp"
-            android:title="Favoritos" />
+            android:title="@string/menu_nav_favoritos" />
         <item
             android:id="@+id/nav_assistidos"
             android:icon="@drawable/ic_visibility_white_36dp"
-            android:title="Assistidos" />
+            android:title="@string/menu_nav_assistidos" />
         <item
-            android:id="@+id/nav_config"
-            android:icon="@drawable/ic_build_white_36dp"
-            android:title="Localização no Mapa" />
+            android:id="@+id/nav_localcine"
+            android:icon="@drawable/ic_pin_drop_white_36dp"
+            android:title="@string/menu_nav_localcine" />
         <item
             android:id="@+id/nav_info"
             android:icon="@drawable/ic_account_box_white_36dp"
-            android:title="Informações" />
+            android:title="@string/menu_nav_info" />
         <item
             android:id="@+id/nav_exit"
             android:icon="@drawable/ic_exit_to_app_white_36dp"
-            android:title="Sair" />
+            android:title="@string/menu_nav_exit" />
     </group>
 </menu>

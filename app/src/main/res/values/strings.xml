@@ -11,9 +11,14 @@
     <string name="activity_favorite">FAVORITE</string>
 
     <!-- Menu -->
-    <string name="menu_favorite">Favorite</string>
-    <string name="menu_move">Moves</string>
-    <string name="menu_config">Config</string>
+    <string name="menu_nav_favoritos">Favorite</string>
+    <string name="menu_nav_assistidos">I Watched</string>
+    <string name="menu_nav_categoria">Top 10</string>
+    <string name="menu_nav_search">Search</string>
+    <string name="menu_nav_localcine">Cine Location</string>
+    <string name="menu_nav_info">About</string>
+    <string name="menu_nav_exit">Exit</string>
+
 
     <string name="yes">Yes</string>
     <string name="no">No</string>
@@ -24,8 +29,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="action_add_favourite">Add to Favourites</string>
-    <string name="action_play_next">Play Next</string>
-    <string name="backdrop_title">LOVE MUSIC</string>
-    <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="action_play_next">I Watched</string>
+    <string name="backdrop_title">Best Movies</string>
+    <string name="backdrop_subtitle">This season top 10 movies</string>
 
 </resources>

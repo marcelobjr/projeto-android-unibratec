@@ -11,9 +11,13 @@
     <string name="activity_favorite">FAVORITE</string>
 
     <!-- Menu -->
-    <string name="menu_favorite">Favorite</string>
-    <string name="menu_move">Moves</string>
-    <string name="menu_config">Config</string>
+    <string name="menu_nav_favoritos">Favorite</string>
+    <string name="menu_nav_assistidos">I Watched</string>
+    <string name="menu_nav_categoria">Top 10</string>
+    <string name="menu_nav_search">Search</string>
+    <string name="menu_nav_localcine">Cine Location</string>
+    <string name="menu_nav_info">About</string>
+    <string name="menu_nav_exit">Exit</string>
 
     <string name="yes">Yes</string>
     <string name="no">No</string>
