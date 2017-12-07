@@ -19,9 +19,10 @@
             android:icon="@drawable/ic_visibility_white_36dp"
             android:title="@string/menu_nav_assistidos" />
         <item
-            android:id="@+id/nav_localcine"
+            android:id="@+id/nav_localcinema"
             android:icon="@drawable/ic_pin_drop_white_36dp"
             android:title="@string/menu_nav_localcine" />
+
         <item
             android:id="@+id/nav_info"
             android:icon="@drawable/ic_account_box_white_36dp"

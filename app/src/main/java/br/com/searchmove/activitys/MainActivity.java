@@ -102,11 +102,11 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
             Intent it = new Intent(this, WatchedActivity.class);
             startActivity(it);
 
-        } else if (id == R.id.nav_localcine) {
+        } else if (id == R.id.nav_localcinema) {
             Intent it = new Intent(this, MapsActivity.class);
             startActivity(it);
 
-        } else if (id == R.id.nav_info) {
+        }else if (id == R.id.nav_info) {
             Intent intent = new Intent(this, Act_ingrante2.class);
             startActivity(intent);
 

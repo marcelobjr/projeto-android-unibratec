@@ -24,5 +24,6 @@
     <string name="no">Não</string>
 
     <string name="exit_app">Tem certeza que deseja sair do App?</string>
+    <string name="menu_nav_meulocal">Meu Local</string>
 
 </resources>

@@ -119,10 +119,6 @@ public class MovieActivity extends AppCompatActivity implements OnDbClick, Navig
             Intent it = new Intent(this, WatchedActivity.class);
             startActivity(it);
 
-        } else if (id == R.id.nav_localcine) {
-            Intent it = new Intent(this, MapsActivity.class);
-            startActivity(it);
-
         } else if (id == R.id.nav_info) {
             Intent intent = new Intent(this, Act_ingrante2.class);
             startActivity(intent);

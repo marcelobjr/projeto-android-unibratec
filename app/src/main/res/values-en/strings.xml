@@ -23,5 +23,6 @@
     <string name="no">No</string>
 
     <string name="exit_app">Are you sure you want to exit the App?</string>
+    <string name="menu_nav_meulocal">Meu Local</string>
 
 </resources>

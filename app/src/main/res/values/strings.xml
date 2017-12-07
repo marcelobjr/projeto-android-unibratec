@@ -32,5 +32,6 @@
     <string name="action_play_next">I Watched</string>
     <string name="backdrop_title">Best Movies</string>
     <string name="backdrop_subtitle">This season top 10 movies</string>
+    <string name="menu_nav_meulocal">Meu Local</string>
 
 </resources>
