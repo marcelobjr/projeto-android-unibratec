@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
         }
 
         @Override
-        public int getCount(){return 2;}
+        public int getCount(){return 3;}
 
         @Override
         public CharSequence getPageTitle(int position){
