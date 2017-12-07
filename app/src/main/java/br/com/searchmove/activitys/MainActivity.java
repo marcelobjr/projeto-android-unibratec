@@ -17,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import br.com.searchmove.R;
 import br.com.searchmove.fragments.DetailMovieFragment;
@@ -24,7 +25,9 @@ import br.com.searchmove.fragments.FavoritesMovieFragment;
 import br.com.searchmove.fragments.WatchedMovieFragment;
 import br.com.searchmove.fragments.ListMovieFragment;
 import br.com.searchmove.interfaces.OnDbClick;
+import br.com.searchmove.maps.MapsActivity;
 import br.com.searchmove.model.Result;
+import br.com.searchmove.service.ServiceApi;
 
 public class MainActivity extends AppCompatActivity implements OnDbClick, NavigationView.OnNavigationItemSelectedListener {
 
@@ -61,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
 
 
 
+
     }
 
     @Override
@@ -81,16 +85,33 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
 
         if (id == R.id.nav_categoria) {
             Intent intent = new Intent(this,
-                    GenerActivity.class);
+                    MovieActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_search) {
+            Intent intent = new Intent(this,
+                    MainActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_favoritos) {
+            Intent intent = new Intent(this,
+                    MainActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_assistidos) {
+            Intent it = new Intent(this, WatchedActivity.class);
+//            it.putExtra("result", result);
+            startActivity(it);
+
+        } else if (id == R.id.nav_config) {
+            Intent it = new Intent(this, MapsActivity.class);
+//            it.putExtra("result", result);
+            startActivity(it);
 
         } else if (id == R.id.nav_info) {
+            Intent intent = new Intent(this,
+                    Act_ingrante2.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_exit) {
             new AlertDialog.Builder(this)
@@ -168,32 +189,34 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
                     return listMovieFragment;
 
                 case 1:
-                    if (favoritesTmDbFragment == null) {
-                        favoritesTmDbFragment = new FavoritesMovieFragment();
-                    }
-                    return favoritesTmDbFragment;
-                case 2:
                 default:
-                    if (watchedMovieFragment == null) {
-                        watchedMovieFragment = new WatchedMovieFragment();
-                    }
-                    return watchedMovieFragment;
+                if (favoritesTmDbFragment == null) {
+                    favoritesTmDbFragment = new FavoritesMovieFragment();
+                }
+                return favoritesTmDbFragment;
+//                case 2:
+//
+//                    if (watchedMovieFragment == null) {
+//                        watchedMovieFragment = new WatchedMovieFragment();
+//                    }
+//                    return watchedMovieFragment;
             }
         }
 
         @Override
-        public int getCount(){return 3;}
+        public int getCount(){return 2;}
 
         @Override
         public CharSequence getPageTitle(int position){
             switch (position){
                 case 0:
-                    return "Pesquisar";//getResources().getString(R.string.activity_list);
+                    return getResources().getString(R.string.activity_list);
                 case 1:
-                    return "Favotito";
-                case 2:
                 default:
-                    return "Eu Assisti";//getResources().getString(R.string.activity_favorite);
+                    return getResources().getString(R.string.activity_favorite);
+//                case 2:
+//
+//                    return "Eu Assisti";//getResources().getString(R.string.activity_favorite);
             }
         }
     }
