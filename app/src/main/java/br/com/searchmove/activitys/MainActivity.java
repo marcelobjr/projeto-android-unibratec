@@ -97,6 +97,9 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
             startActivity(it);
 
         } else if (id == R.id.nav_info) {
+            Intent intent = new Intent(this,
+                    Act_ingrante2.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_exit) {
             new AlertDialog.Builder(this)
