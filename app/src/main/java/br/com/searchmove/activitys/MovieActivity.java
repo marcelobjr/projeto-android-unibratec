@@ -32,6 +32,8 @@ import br.com.searchmove.R;
 import br.com.searchmove.adapter.MovieAdapter;
 import br.com.searchmove.interfaces.OnDbClick;
 import br.com.searchmove.maps.MapsActivity;
+import br.com.searchmove.model.FilmeMock;
+import br.com.searchmove.model.Popular;
 import br.com.searchmove.model.Movie;
 import br.com.searchmove.model.Result;
 
@@ -40,7 +42,7 @@ public class MovieActivity extends AppCompatActivity implements OnDbClick, Navig
 
     private RecyclerView recyclerView;
     private MovieAdapter adapter;
-    private List<Movie> movieList;
+    private List<FilmeMock> movieList;
     DrawerLayout drawerlayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
 
@@ -183,10 +185,45 @@ public class MovieActivity extends AppCompatActivity implements OnDbClick, Navig
      */
     private void prepareAlbums() {
         int[] covers = new int[]{
-                };
+                R.drawable.movie1,
+                R.drawable.movie2,
+                R.drawable.movie3,
+                R.drawable.movie4,
+                R.drawable.movie5,
+                R.drawable.movie6,
+                R.drawable.movie7,
+                R.drawable.movie8,
+                R.drawable.movie9,
+                R.drawable.movie10};
 
-        Movie a = new Movie();
-        a.setTitle("True Romance");
+        FilmeMock a = new FilmeMock("Guardiões da Galáxia Vol. 2", 13, covers[0]);
+        movieList.add(a);
+
+        a = new FilmeMock("Logan", 8, covers[1]);
+        movieList.add(a);
+
+        a = new FilmeMock("Liga da Justiça", 11, covers[2]);
+        movieList.add(a);
+
+        a = new FilmeMock("Homem-Aranha: De Volta ao Lar", 12, covers[3]);
+        movieList.add(a);
+
+        a = new FilmeMock("Thor: Ragnarok", 14, covers[4]);
+        movieList.add(a);
+
+        a = new FilmeMock("Mulher Maravilha", 1, covers[5]);
+        movieList.add(a);
+
+        a = new FilmeMock("Star Wars: Os Últimos Jedi", 11, covers[6]);
+        movieList.add(a);
+
+        a = new FilmeMock("It: A Coisa", 14, covers[7]);
+        movieList.add(a);
+
+        a = new FilmeMock("Velozes e Furiosos 8", 11, covers[8]);
+        movieList.add(a);
+
+        a = new FilmeMock("Transformers: O Último Cavaleiro", 17, covers[9]);
         movieList.add(a);
 
         adapter.notifyDataSetChanged();
