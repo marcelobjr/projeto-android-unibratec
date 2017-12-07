@@ -18,9 +18,9 @@ public class WatchedActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        ListView lvMovies = (ListView)findViewById(R.id.lv_movies);
-
-        ServiceApi task = new ServiceApi(this, lvMovies);
-        task.execute();
+//        ListView lvMovies = (ListView)findViewById(R.id.lv_movies);
+//
+//        ServiceApi task = new ServiceApi(this, lvMovies);
+//        task.execute();
     }
 }

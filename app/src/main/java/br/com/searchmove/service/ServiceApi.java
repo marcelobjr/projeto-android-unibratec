@@ -35,7 +35,7 @@ import br.com.searchmove.model.Movie;
  * Created by marcelo on 02/12/17.
  */
 
-public class ServiceApi extends AsyncTask<Void, Void, List<Album>> {
+public class ServiceApi extends AsyncTask<Void, Void, List<Movie>> {
     private final ListView mLvMovies;
     private final String HOST = "https://api.themoviedb.org/3/";
     private final String API_KEY = "api_key=0468dca260ceb349764750f3183186f3";
@@ -53,8 +53,8 @@ public class ServiceApi extends AsyncTask<Void, Void, List<Album>> {
     }
 
     @Override
-    protected List<Album> doInBackground(Void... params) {
-        List<Album> filmes = new ArrayList<>();
+    protected List<Movie> doInBackground(Void... params) {
+        List<Movie> filmes = new ArrayList<>();
         try {
             URL url = new URL(HOST + "movie/popular?" + API_KEY);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -75,7 +75,7 @@ public class ServiceApi extends AsyncTask<Void, Void, List<Album>> {
 
             Gson gson = new Gson();
 
-            Type type = new TypeToken<List<Album>>(){}.getType();
+            Type type = new TypeToken<List<Movie>>(){}.getType();
             filmes = gson.fromJson(json, type);
             Log.d("TESTE", filmes.size() + "");
 
@@ -93,11 +93,11 @@ public class ServiceApi extends AsyncTask<Void, Void, List<Album>> {
     }
 
     @Override
-    protected void onPostExecute(List<Album> movies) {
+    protected void onPostExecute(List<Movie> movies) {
         // Desfazer o progressDialog
         dialag.dismiss();
         // Carregar ListView da Activity
-        ArrayAdapter<Album> adapter = new ArrayAdapter<Album>(mContext,android.R.layout.simple_list_item_2,movies);
+        ArrayAdapter<Movie> adapter = new ArrayAdapter<Movie>(mContext,android.R.layout.simple_list_item_1,movies);
         mLvMovies.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }

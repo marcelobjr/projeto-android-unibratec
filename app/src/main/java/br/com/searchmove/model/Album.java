@@ -6,6 +6,16 @@ package br.com.searchmove.model;
 
 public class Album {
     private String title;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private Double vote_average;
     private int id;
     private int vote_count;
@@ -122,7 +132,9 @@ public class Album {
     }
 
     public void setTitle(String title) {
+
         this.title = title;
+        this.name = title;
     }
 
     public Album() {

@@ -31,6 +31,7 @@ import java.util.List;
 import br.com.searchmove.R;
 import br.com.searchmove.adapter.MovieAdapter;
 import br.com.searchmove.interfaces.OnDbClick;
+import br.com.searchmove.maps.MapsActivity;
 import br.com.searchmove.model.Movie;
 import br.com.searchmove.model.Result;
 
@@ -75,7 +76,7 @@ public class MovieActivity extends AppCompatActivity implements OnDbClick, Navig
         prepareAlbums();
 
         try {
-            Glide.with(this).load(R.drawable.filmespublicitarios).into((ImageView) findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.filmes).into((ImageView) findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -100,6 +101,9 @@ public class MovieActivity extends AppCompatActivity implements OnDbClick, Navig
         int id = item.getItemId();
 
         if (id == R.id.nav_categoria) {
+            Intent intent = new Intent(this,
+                    MovieActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_search) {
             Intent intent = new Intent(this,
@@ -107,10 +111,21 @@ public class MovieActivity extends AppCompatActivity implements OnDbClick, Navig
             startActivity(intent);
 
         } else if (id == R.id.nav_favoritos) {
+            Intent intent = new Intent(this,
+                    MainActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_assistidos) {
+            Intent it = new Intent(this, WatchedActivity.class);
+            startActivity(it);
+
+        } else if (id == R.id.nav_localcine) {
+            Intent it = new Intent(this, MapsActivity.class);
+            startActivity(it);
 
         } else if (id == R.id.nav_info) {
+            Intent intent = new Intent(this, Act_ingrante2.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_exit) {
             new AlertDialog.Builder(this)
