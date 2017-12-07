@@ -4,7 +4,7 @@ package br.com.searchmove.model;
  * Created by marcelo on 05/12/17.
  */
 
-public class Album {
+public class Popular {
     private String title;
     private String name;
 
@@ -137,7 +137,7 @@ public class Album {
         this.name = title;
     }
 
-    public Album() {
+    public Popular() {
 
     }
 

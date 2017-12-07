@@ -17,12 +17,13 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import br.com.searchmove.R;
+import br.com.searchmove.model.FilmeMock;
 import br.com.searchmove.model.Movie;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<Movie> movieList;
+    private List<FilmeMock> movieList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, count;
@@ -38,7 +39,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
     }
 
 
-    public MovieAdapter(Context mContext, List<Movie> movieList) {
+    public MovieAdapter(Context mContext, List<FilmeMock> movieList) {
         this.mContext = mContext;
         this.movieList = movieList;
     }
@@ -53,12 +54,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        Movie movie = movieList.get(position);
-        holder.title.setText(movie.getTitle());
-        holder.count.setText(movie.getId() + " songs");
+        FilmeMock movie = movieList.get(position);
+        holder.title.setText(movie.getName());
+        holder.count.setText(movie.getNumOfSongs() + " votos");
 
         // loading album cover using Glide library
-        Glide.with(mContext).load(movie.getBackdropPath()).into(holder.thumbnail);
+        Glide.with(mContext).load(movie.getThumbnail()).into(holder.thumbnail);
 
         holder.overflow.setOnClickListener(new View.OnClickListener() {
             @Override
