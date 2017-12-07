@@ -34,7 +34,7 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             tools:context="br.com.searchmove.activitys.Activity_Integrantes"
-            tools:showIn="@layout/activity_integrantes">
+            tools:showIn="@layout/activity_act_ingrante2">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -42,7 +42,8 @@
                 android:layout_height="94dp"
                 android:src="@drawable/juanvieitez"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="-1dp" />
+                tools:layout_editor_absoluteY="-1dp"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -50,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:text="Nome: "
                 tools:layout_editor_absoluteX="110dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -58,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:text="idade: "
                 tools:layout_editor_absoluteX="110dp"
-                tools:layout_editor_absoluteY="44dp" />
+                tools:layout_editor_absoluteY="44dp"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -66,7 +69,8 @@
                 android:layout_height="wrap_content"
                 android:text="Cargo: "
                 tools:layout_editor_absoluteX="110dp"
-                tools:layout_editor_absoluteY="73dp" />
+                tools:layout_editor_absoluteY="73dp"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/editText4"
@@ -75,7 +79,8 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="164dp"
-                tools:layout_editor_absoluteY="44dp" />
+                tools:layout_editor_absoluteY="44dp"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/editText6"
@@ -84,7 +89,8 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="164dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/editText7"
@@ -93,7 +99,8 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="164dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
         </android.support.constraint.ConstraintLayout>
 
