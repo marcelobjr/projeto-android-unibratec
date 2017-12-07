@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-    tools:context="br.com.searchmove.activitys.MainActivity">
+    tools:context="br.com.searchmove.activitys.MainActivity"
+    tools:ignore="NamespaceTypo">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_toobar"
