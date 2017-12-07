@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
         }
 
         @Override
-        public int getCount(){return 3;}
+        public int getCount(){return 2;}
 
         @Override
         public CharSequence getPageTitle(int position){
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity implements OnDbClick, Naviga
                 case 0:
                     return "Pesquisar";//getResources().getString(R.string.activity_list);
                 case 1:
-                    return "Favotito";
+                    return "Favorito";
                 case 2:
                 default:
                     return "Eu Assisti";//getResources().getString(R.string.activity_favorite);
