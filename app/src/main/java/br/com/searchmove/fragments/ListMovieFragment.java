@@ -1,5 +1,6 @@
 package br.com.searchmove.fragments;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -37,6 +38,7 @@ public class ListMovieFragment extends Fragment implements SearchView.OnQueryTex
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     ListView mListMovie;
     RetrofitService mRetrofitService;
+    private ProgressDialog dialag;
 
     public ListMovieFragment() {
         // Required empty public constructor
@@ -92,15 +94,18 @@ public class ListMovieFragment extends Fragment implements SearchView.OnQueryTex
     }
 
     private void loadMovie(String titulo) {
+        dialag = ProgressDialog.show(this.getContext(),"Search Move","Aguarde...");
         mRetrofitService.searchMovie(titulo).enqueue(new Callback<SearchResult>() {
             @Override
             public void onResponse(Call<SearchResult> call, retrofit2.Response<SearchResult> response) {
                 List<Result> results = response.body().getResults();
                 EventBus.getDefault().postSticky(results);
+                dialag.dismiss();
             }
 
             @Override
             public void onFailure(Call<SearchResult> call, Throwable t) {
+                dialag.dismiss();
             }
         });
     }

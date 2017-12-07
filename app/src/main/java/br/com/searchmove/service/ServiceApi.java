@@ -97,7 +97,7 @@ public class ServiceApi extends AsyncTask<Void, Void, List<Album>> {
         // Desfazer o progressDialog
         dialag.dismiss();
         // Carregar ListView da Activity
-        ArrayAdapter<Album> adapter = new ArrayAdapter<Album>(mContext,android.R.layout.simple_list_item_activated_1,movies);
+        ArrayAdapter<Album> adapter = new ArrayAdapter<Album>(mContext,android.R.layout.simple_list_item_2,movies);
         mLvMovies.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
