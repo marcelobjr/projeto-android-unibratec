@@ -27,7 +27,7 @@ public class RetrofitUtil {
                         HttpUrl originalHttpUrl = original.url();
 
                         HttpUrl url = originalHttpUrl.newBuilder()
-                                .addQueryParameter("include_adult", "true")
+                                    .addQueryParameter("include_adult", "true")
                                 .addQueryParameter("api_key", KEY)
                                 .build();
 
